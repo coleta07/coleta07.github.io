@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Inter;
+    background-color: #E9E9E9;
+}
+
+h1{
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+    color: #a01818;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    padding: 1vw;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header__menu{
+    display: flex;
+    flex-grow: 1;
+}
+
+.header__logo img{
+    width: 15vw;
+}
+
+.header__menu ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.header__menu ul li a{
+    text-decoration: none;
+    color: #a01818;
+    font-size: 3vw;
+    font-weight: bold;
+
+    transition: 0.5s;
+}
+
+.header__menu ul li a:hover{
+    color: black;
+}
+
+.video-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-div video{
+    width: 100vw;
+    z-index: -1;
+}
+
+.video-div .overlay-div{
+    position: absolute;
+    text-align: center;
+}
+
+.video-div .overlay-div button{
+    margin: 3vw;
+    margin-top: 10vh;
+    width: 20vw;
+    height: 10vh;
+    border-radius: 90px;
+    border-style: none;
+
+    background-color: rgba(61, 61, 61, 0.75);
+    font-size: 1.7vw;
+    color: white;
+    font-weight: bold;
+
+    transition: .5s ease-in-out;
+}
+
+.video-div .overlay-div button:hover{
+    width: 24vw;
+    height: 12vh;
+    font-size: 2vw;
+    margin: 2vw;
+    margin-top: 8vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.statistics{
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    background-color: #a01818;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.statistics .stat p{
+    color: white;
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container{
+    overflow: hidden;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+.caroussel{
+    position: relative;
+}
+
+.caroussel h2{
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    margin-bottom: 2vh;
+}
+
+.caroussel-inner{
+    display: flex;
+    overflow: hidden;
+    flex-wrap: nowrap;
+}
+
+.caroussel-inner .comment-inner{
+    flex: 0 0 10%;
+    padding: 2vw;
+    transition: .5s ease-in-out;
+    text-align: center;
+    margin: 3vw;
+    background-color: #D2D2D2;
+    border-radius: 40px;
+}
+
+.caroussel-inner .comment-inner .client{
+    color: #a01818;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.caroussel-inner .comment-inner .comment{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    color: black;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.caroussel-inner .comment-inner .source{
+    opacity: 0.5;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 5vh;
+}
+
+.footer img{
+    width: 15vw;
+    margin-bottom: 1vh;
+}
+
+.footer .footer-div h3{
+    font-size: 3vw;
+    font-weight: bold;
+    color: #a01818;
+}
+
+.iconButton{
+    margin-top: 4vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.button{
+    background-color : rgb(185, 176, 176);
+    width: 4vw;
+    height: 4vw;
+    float: left;
+    border-radius: 50px;
+    margin: 0 1vw;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+.button a{
+    color: black;
+    text-decoration: none;
+}
+
+.button:nth-child(1):hover{
+    background-color: #4267b2;
+    color : #fff;
+}
+
+.button:nth-child(2):hover{
+    background-color: #25D366;
+    color : #fff;
+}
+
+.button:nth-child(3):hover{
+    background-color: #0489C9;
+    color : #fff;
+}
+
+.button:hover a{
+    color: #fff;
+}
+
+.button .s-icon{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width : 4vw;
+    height : 4vw;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.button .s-icon i {
+    font-size: 2vw;
+}
+
+.footer .footer-div .footer-div-button{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .footer-div .footer-div-button button{
+    width: 12vw;
+    height: 7vh;
+    border-radius: 90px;
+    border-style: none;
+
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin-top: 1vh;
+}
