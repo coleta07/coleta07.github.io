@@ -3,16 +3,22 @@
     padding: 0;
 }
 
+:root{
+    --primary-color: #c02222;
+    --secondary-color: #D2D2D2;
+    --tertiary-color: #E9E9E9;
+}
+
 body{
     font-family: Inter;
-    background-color: #E9E9E9;
+    background-color: var(--tertiary-color);
 }
 
 h1{
     font-size: calc(3vw + 1vh);
     font-weight: bold;
     text-align: center;
-    color: #a01818;
+    color: var(--primary-color);
     margin-top: calc(3vw + 4vh);
 }
 
@@ -29,6 +35,8 @@ h1{
     width: 100%;
     display: flex;
     align-items: center;
+    padding-left: calc(1vw + 1vh);
+    padding-right: calc(1vw + 1vh);
 }
 
 .header__menu{
@@ -49,7 +57,7 @@ h1{
 
 .header__menu ul li a{
     text-decoration: none;
-    color: #a01818;
+    color: var(--primary-color);
     font-size: calc(2.5vw + 0.8vh);
     font-weight: bold;
 
@@ -114,7 +122,7 @@ h1{
 .statistics{
     padding-top: calc(3vw + 4vh);
     padding-bottom: calc(3vw + 4vh);
-    background-color: #a01818;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -157,12 +165,12 @@ h1{
     transition: .5s ease-in-out;
     text-align: center;
     margin: calc(2vw + 1vh);
-    background-color: #D2D2D2;
+    background-color: var(--secondary-color);
     border-radius: calc(4vw + 1vh);
 }
 
 .caroussel-inner .comment-inner .client{
-    color: #a01818;
+    color: var(--primary-color);
     font-size: calc(1.5vw + 0.5vh);
     font-weight: bold;
 }
@@ -188,19 +196,20 @@ h1{
 }
 
 .footer img{
-    width: calc(10vw + 3vh);
+    width: calc(13vw + 5vh);
     margin-bottom: 1vh;
 }
 
 .footer .footer-div p{
-    font-size: calc(1.3vw + 0.3vh);
+    font-size: calc(1vw + 0.3vh);
 
 }
 
 .footer .footer-div h3{
-    font-size: calc(2.5vw + 1vh);
+    font-size: calc(2vw + 1vh);
     font-weight: bold;
-    color: #a01818;
+    color: var(--primary-color);
+    text-align: center;
 }
 
 .iconButton{
@@ -212,11 +221,11 @@ h1{
 
 .button{
     background-color : rgb(185, 176, 176);
-    width: calc(3.5vw + 2vh);
-    height: calc(3.5vw + 2vh);
+    width: calc(3vw + 2vh);
+    height: calc(3vw + 2vh);
     float: left;
-    border-radius: calc(3.5vw + 2vh);
-    margin: 0 calc(0.6vw + 0.5vh);
+    border-radius: calc(3vw + 2vh);
+    margin: 0 calc(0.4vw + 0.3vh);
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
@@ -253,8 +262,8 @@ h1{
     align-items: center;
     flex-wrap: wrap;
 
-    width : calc(3.5vw + 2vh);
-    height : calc(3.5vw + 2vh);
+    width : calc(3vw + 2vh);
+    height : calc(3vw + 2vh);
     border-radius: 50%;
     text-align: center;
     transition: all 0.3s ease-in-out;
@@ -287,14 +296,14 @@ h1{
 .contact{
     display: flex;
     align-items: center;
-    background-color: #D2D2D2;
+    background-color: var(--secondary-color);
     height: 100vh;
 }
 
 .contact .form-contact{
     width: 30%;
-    height: 80%;
     margin-left: 10vw;
+    padding: 2vw;
     margin-top: calc(5vw + 3vh);
     display: flex;
     align-items: center;
@@ -308,7 +317,9 @@ h1{
     color: white;
     font-size: calc(2vw + 1vh);
     font-weight: bold;
-    margin-top: calc(3vw + 3vh);
+    margin-top: calc(1vw + 1vh);
+    margin-bottom: calc(1vw + 1vh);
+    text-align: center;
 }
 
 .contact .form-contact form{
@@ -326,8 +337,12 @@ h1{
     margin: 0.7vw;
     border-radius: calc(1vw + 0.5vh);
     border-style: none;
-    background-color: #D2D2D2;
+    background-color: var(--secondary-color);
     padding: 0.5vw;
+}
+
+input:focus, textarea:focus{
+    outline: none;
 }
 
 .contact .form-contact form .form-message{
@@ -337,10 +352,12 @@ h1{
     width : 80%;
     margin-left: 5%;
     margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     height: calc(4vw + 2vh);
     border-radius: calc(1vw + 0.5vh);
     padding: calc(1vw + 0.5vh);
-    background-color: #D2D2D2;
+    background-color: var(--secondary-color);
     resize: none;
 }
 
@@ -353,31 +370,35 @@ h1{
     font-size: calc(1.2vw + 0.5vh);
     font-weight: bold;
     margin-top: 1vh;
-    background-color: #D2D2D2;
+    background-color: var(--secondary-color);
     color: black;
 }
 
 .contact .message-contact{
     width: 50%;
-    height: 80%;
-    margin-left: 5vw;
+    margin-left: 10vw;
+    margin-right: 5vw;
     margin-top: calc(5vw + 3vh);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
     flex-direction: column;
 }
 
 .contact .message-contact h2{
-    color: #a01818;
+    color: var(--primary-color);
+    margin: calc(1vw + 1vh);
     font-size: calc(2vw + 1vh);
     font-weight: bold;
     margin-top: calc(3vw + 3vh);
+    text-align: center;
 }
 
 .contact .message-contact p{
+    width: 80%;
     color: black;
+    margin: calc(0.5vw + 0.5vh);
     font-size: calc(1vw + 0.5vh);
 }
 
@@ -387,43 +408,44 @@ h1{
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #D2D2D2;
-        height: 170vh;
+        background-color: var(--secondary-color);
+        height: 130vh;
         flex-direction: column;
     }
 
     .contact .message-contact{
         order: 1;
         flex-grow: 1;
-
-        width: 80%;
-        height: 60%;
+        
+        width: 90%;
         margin-left: 5vw;
-        margin-top: calc(5vw + 3vh);
+        margin-top: calc(1vw + 5vh);
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         text-align: center;
         flex-direction: column;
     }
 
     .contact .message-contact h2{
-        color: #a01818;
+        color: var(--primary-color);
         font-size: calc(3vw + 1.5vh);
         font-weight: bold;
         margin-top: calc(3vw + 3vh);
     }
 
     .contact .message-contact p{
+        width: 80%;
         color: black;
         font-size: calc(1.5vw + 0.7vh);
     }
 
     .contact .form-contact{
-        width: 60%;
+        width: 70%;
         flex-grow: 4;
         order: 2;
         margin-bottom: 3vh;
+        margin-left: 0;
     }
 
     .contact .form-contact form button{
@@ -434,7 +456,7 @@ h1{
     
         font-size: calc(2vw + 1vh);
         font-weight: bold;
-        background-color: #D2D2D2;
+        background-color: var(--secondary-color);
         color: black;
     }
 
@@ -445,7 +467,7 @@ h1{
         height: calc(6vw + 4vh);
         border-radius: calc(1vw + 0.5vh);
         padding: calc(1vw + 0.5vh);
-        background-color: #D2D2D2;
+        background-color: var(--secondary-color);
         resize: none;
     }
 
@@ -455,7 +477,7 @@ h1{
         margin: 3%;
         border-radius: calc(1vw + 0.5vh);
         border-style: none;
-        background-color: #D2D2D2;
+        background-color: var(--secondary-color);
         padding: 0.5vw;
     }
 
