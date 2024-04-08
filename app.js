@@ -19,3 +19,18 @@
     $comment.forEach($elt => $elt.addEventListener('mouseenter', () => clearInterval(intervalId)));
     $comment.forEach($elt => $elt.addEventListener('mouseleave', () => intervalId = setInterval(showComment, commentTime)));
 })();
+
+
+const infoButtons = document.querySelectorAll('.mission-info');
+
+infoButtons.forEach((button) => {
+    button.addEventListener('mouseover', () => {
+        const tooltip = button.previousElementSibling;
+        tooltip.style.display = 'flex';
+    });
+
+    button.addEventListener('mouseout', () => {
+        const tooltip = button.previousElementSibling;
+        tooltip.style.display = 'none';
+    });
+});
