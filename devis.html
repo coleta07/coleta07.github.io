@@ -25,7 +25,7 @@
             </div>
         </header>
         <div class="devis-class">
-            <h1>Faire son devis en ligne</h1>
+            <h1>Faire son devis en ligne</h1>              
             <div class="mission">
                 <h2>1. Choisir le type de mission que vous souhaitez</h2>
                 <div class="mission-containers">
@@ -40,7 +40,7 @@
                         <h3 class="mission-title">DE SORTIE LOCATIVE</h3>
                         <p class="mission-person">locataire / bailleur</p>
                         <p class="mission-price">à partir de 135.00€ tvac / partie</p>
-                        <button class="mission-button">choisir celle-là</button>
+                        <button class="mission-button" id="sortie-locative-button">choisir celle-là</button>
                     </div>
                     <div class="mission-container">
                         <span class="tooltip">
@@ -53,7 +53,7 @@
                         <h3 class="mission-title">D'ENTREE LOCATIVE</h3>
                         <p class="mission-person">locataire / bailleur</p>
                         <p class="mission-price">à partir de 135.00€ tvac / partie</p>
-                        <button class="mission-button">choisir celle-là</button>
+                        <button class="mission-button" id="entree-locative-button">choisir celle-là</button>
                     </div>
                     <div class="mission-container">
                         <span class="tooltip">
@@ -66,7 +66,7 @@
                         <h3 class="mission-title">IMMOBILIERE</h3>
                         <p class="mission-person">pour tous types d'immeubles</p>
                         <p class="mission-price">à partir de 250,00€ tvac</p>
-                        <button class="mission-button">choisir celle-là</button>
+                        <button class="mission-button" id="evaluation-immobiliere-button">choisir celle-là</button>
                     </div>
 
                     <div class="mission-container">
@@ -80,7 +80,7 @@
                         <h3 class="mission-title">ACQUISITIF / USUFRUIT</h3>
                         <p class="mission-person">acheteur / vendeur</p>
                         <p class="mission-price">à partir de 135.00€ tvac / partie</p>
-                        <button class="mission-button">choisir celle-là</button>
+                        <button class="mission-button" id="acquisitif-usufruit-button">choisir celle-là</button>
                     </div>
 
                     <div class="mission-container">
@@ -93,7 +93,7 @@
                         <h3 class="mission-title">RECEPTION PROVISOIRE</h3>
                         <p class="mission-person">Pathologie, Constats Techniques<br>Constats Avant-Travaux</p>
                         <p class="mission-price">à partir de 235.95€ tvac</p>
-                        <button class="mission-button">choisir celle-là</button>
+                        <button class="mission-button" id="reception-provisoire-button">choisir celle-là</button>
                     </div>
 
                     <div class="mission-container">
@@ -106,7 +106,7 @@
                         <h3 class="mission-title">VISISTE LOCATIVE ANNUELLE</h3>
                         <p class="mission-person">Observations sur l'état de l'immeuble</p>
                         <p class="mission-price">à partir de 150€ tvac</p>
-                        <button class="mission-button">choisir celle-là</button>
+                        <button class="mission-button" id="visite-locative-annuelle-button">choisir celle-là</button>
                     </div>
 
                     <div class="mission-container">
@@ -119,7 +119,7 @@
                         <h3 class="mission-title">ENQUÊTE <br> PERMIS DE LOCATION</h3>
                         <p class="mission-person">Studio & Logements Collectifs RW</p>
                         <p class="mission-price">à partir de 150,00€ htva</p>
-                        <button class="mission-button">choisir celle-là</button>
+                        <button class="mission-button" id="enquete-button">choisir celle-là</button>
                     </div>
 
                     <div class="mission-container">
@@ -133,60 +133,70 @@
                 <h2>2. Choisir le bien à expertiser</h2>
                 <div class="bien-containers">
                     <div class="bien-container">
+                        <i class="fa-regular fa-building"></i>
                         <h3 class="bien-title">Studio</h3>
                         <p class="bien-price">à partir de 135€ tvac / partie</p>
                         <button class="bien-button">choisir celui-là</button>
                     </div>
 
                     <div class="bien-container">
+                        <i class="fa-solid fa-city"></i>
                         <h3 class="bien-title">Appartement (1 chambre)</h3>
                         <p class="bien-price">à partir de 145€ tvac / partie</p>
                         <button class="bien-button">choisir celui-là</button>
                     </div>
 
                     <div class="bien-container">
+                        <i class="fa-solid fa-city"></i>
                         <h3 class="bien-title">Appartement (2 chambres)</h3>
                         <p class="bien-price">à partir de 160.00€ tvac / partie</p>
                         <button class="bien-button">choisir celui-là</button>
                     </div>
 
                     <div class="bien-container">
+                        <i class="fa-solid fa-city"></i>
                         <h3 class="bien-title">Appartement (3 chambres)</h3>
                         <p class="bien-price">à partir de 175.00€ tvac / partie</p>
                         <button class="bien-button">choisir celui-là</button>
                     </div>
 
                     <div class="bien-container">
+                        <i class="fa-solid fa-city"></i>
                         <h3 class="bien-title">Appartement (4 chambres)</h3>
                         <p class="bien-price">à partir de 190.00€ tvac / partie</p>
                         <button class="bien-button">choisir celui-là</button>
                     </div>
 
                     <div class="bien-container">
+                        <i class="fa-solid fa-house"></i>
                         <h3 class="bien-title">Maison (1/2 chambres)</h3>
                         <p class="bien-price">à partir de 180.00€ tvac / partie</p>
                         <button class="bien-button">choisir celui-là</button>
                     </div>
 
                     <div class="bien-container">
+                        <i class="fa-solid fa-house"></i>
                         <h3 class="bien-title">Maison (3 chambres)</h3>
                         <p class="bien-price">à partir de 195.00€ tvac / partie</p>
                         <button class="bien-button">choisir celui-là</button>
                     </div>
 
                     <div class="bien-container">
+                        <i class="fa-solid fa-house"></i>
                         <h3 class="bien-title">Maison (4 chambres)</h3>
                         <p class="bien-price">à partir de 210.00€ tvac / partie</p>
                         <button class="bien-button">choisir celui-là</button>
                     </div>
 
                     <div class="bien-container">
+                        <i class="fa-solid fa-house"></i>
                         <h3 class="bien-title">Maison (5 chambres et plus)</h3>
                         <p class="bien-price">à partir de 215.00€ tvac / partie</p>
                         <button class="bien-button">choisir celui-là</button>
                     </div>
 
                     <div class="bien-container">
+                        <i class="fa-solid fa-school"></i>
                         <h3 class="bien-title">Commerce - Bureaux <br> Immeubles de prestiges</h3>
                         <p class="bien-price">à partir de 150.00€ tvac / partie</p>
                         <a href="contact.html"><button class="bien-button">Contactez-nous</button></a>
@@ -198,6 +208,7 @@
                 <h2>2. Choisir le type d'expertise immobilière que vous voulez.</h2>
                 <div class="bien-containers">
                     <div class="bien-container">
+                        <i class="fa-regular fa-building"></i>
                         <h3 class="bien-title">Evaluations Immobilières</h3>
                         <p class="bien-precision">(Patrimoines – Juridique & Fiscales)</p>
                         <p class="bien-person">Tous types d'immeubles</p>
@@ -206,6 +217,7 @@
                     </div>
 
                     <div class="bien-container">
+                        <i class="fa-regular fa-building"></i>
                         <h3 class="bien-title">Expertises bancaires</h3>
                         <p class="bien-precision">(pour professionels)</p>
                         <p class="bien-person">Tous types d'immeubles</p>
@@ -214,6 +226,7 @@
                     </div>
 
                     <div class="bien-container">
+                        <i class="fa-regular fa-building"></i>
                         <h3 class="bien-title">Expertises bancaires</h3>
                         <p class="bien-precision">(pour particuliers)</p>
                         <p class="bien-person">Appartement / Maison / Projet privé</p>
@@ -262,6 +275,73 @@
 
                 <button class="next">Suivant</button>
             </div>
+
+            <div class="bien" id="visite-locative">
+                <h2>2. Choisir le bien à expertiser</h2>
+                <div class="bien-containers">
+                    <div class="bien-container">
+                        <i class="fa-regular fa-building"></i>
+                        <h3 class="bien-title">Chambre</h3>
+                        <p class="bien-price">à partir de 60€ tvac </p>
+                        <button class="bien-button">choisir celui-là</button>
+                    </div>
+    
+                    <div class="bien-container">
+                        <i class="fa-regular fa-building"></i>
+                        <h3 class="bien-title">Studio</h3>
+                        <p class="bien-price">à partir de 150€ tvac</p>
+                        <button class="bien-button">choisir celui-là</button>
+                    </div>
+    
+                    <div class="bien-container">
+                        <i class="fa-solid fa-city"></i>
+                        <h3 class="bien-title">Appartement</h3>
+                        <p class="bien-price">à partir de 195.00€ tvac</p>
+                        <button class="bien-button">choisir celui-là</button>
+                    </div>
+    
+                    <div class="bien-container">
+                        <i class="fa-solid fa-house"></i>
+                        <h3 class="bien-title">Maison(extérieur < 2 ares)</h3>
+                        <p class="bien-price">à partir de 245.00€ tvac</p>
+                        <button class="bien-button">choisir celui-là</button>
+                    </div>
+    
+                    <div class="bien-container">
+                        <i class="fa-solid fa-house"></i>
+                        <h3 class="bien-title">Maison(extérieur > 2 ares)</h3>
+                        <p class="bien-price">à partir de 275.00€ tvac</p>
+                        <button class="bien-button">choisir celui-là</button>
+                    </div>
+    
+                    <div class="bien-container">
+                        <i class="fa-solid fa-hotel"></i>
+                        <h3 class="bien-title">Autres catégories</h3>
+                        <p class="bien-price">à partir de 300.00€ tvac</p>
+                        <a href="contact.html"><button class="bien-button">Contactez-nous</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bien" id="enquete">
+                <h2>2. Choisir le bien à expertiser</h2>
+                <div class="bien-containers">
+                    <div class="bien-container">
+                        <i class="fa-regular fa-building"></i>
+                        <h3 class="bien-title">Logement individuel (studio - 28m² habitables)</h3>
+                        <p class="bien-price">150.00€ htva </p>
+                        <button class="bien-button">choisir celui-là</button>
+                    </div>
+    
+                    <div class="bien-container">
+                        <i class="fa-solid fa-city"></i>
+                        <h3 class="bien-title">Logement collectif</h3>
+                        <p class="bien-price">à partir de 150.00€ htva</p>
+                        <button class="bien-button">choisir celui-là</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <footer class="footer">
             <div class="footer-div">

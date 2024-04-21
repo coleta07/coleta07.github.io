@@ -34,3 +34,59 @@ infoButtons.forEach((button) => {
         tooltip.style.display = 'none';
     });
 });
+
+missionButtons = document.querySelectorAll('.mission-button');
+missionDiv = document.querySelector('.mission');
+
+missionButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        if (button.id == "sortie-locative-button"){
+            missionDiv.style.display = 'none';
+            etatsDesLieuxDiv = document.querySelector('#etats-des-lieux');
+            etatsDesLieuxDiv.style.display = 'flex';
+            window.scrollTo(0, 0);
+        }
+
+        else if (button.id == "entree-locative-button"){
+            missionDiv.style.display = 'none';
+            etatsDesLieuxDiv = document.querySelector('#etats-des-lieux');
+            etatsDesLieuxDiv.style.display = 'flex';
+            window.scrollTo(0, 0);
+        }
+
+        else if (button.id == "acquisitif-usufruit-button"){
+            missionDiv.style.display = 'none';
+            etatsDesLieuxDiv = document.querySelector('#etats-des-lieux');
+            etatsDesLieuxDiv.style.display = 'flex';
+            window.scrollTo(0, 0);
+        }
+
+        else if (button.id == "evaluation-immobiliere-button"){
+            missionDiv.style.display = 'none';
+            etatsDesLieuxDiv = document.querySelector('#immobilier');
+            etatsDesLieuxDiv.style.display = 'flex';
+            window.scrollTo(0, 0);
+        }
+
+        else if (button.id == "reception-provisoire-button"){
+            missionDiv.style.display = 'none';
+            etatsDesLieuxDiv = document.querySelector('#reception-provisoire');
+            etatsDesLieuxDiv.style.display = 'flex';
+            window.scrollTo(0, 0);
+        }
+
+        else if (button.id == "visite-locative-annuelle-button"){
+            missionDiv.style.display = 'none';
+            etatsDesLieuxDiv = document.querySelector('#visite-locative');
+            etatsDesLieuxDiv.style.display = 'flex';
+            window.scrollTo(0, 0);
+        }
+
+        else if (button.id == "enquete-button"){
+            missionDiv.style.display = 'none';
+            etatsDesLieuxDiv = document.querySelector('#enquete');
+            etatsDesLieuxDiv.style.display = 'flex';
+            window.scrollTo(0, 0);
+        }
+    });
+});
