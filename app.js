@@ -90,3 +90,16 @@ missionButtons.forEach((button) => {
         }
     });
 });
+
+window.addEventListener('scroll', function() {
+    var navbar = document.querySelector('.header');
+    var logoImg = document.querySelector('.header__logo img');
+
+    if (window.scrollY > 0) {
+        logoImg.classList.add('scrolled');
+        navbar.classList.add('scrolled');
+    } else {
+        logoImg.classList.remove('scrolled');
+        navbar.classList.remove('scrolled');
+    }
+});
